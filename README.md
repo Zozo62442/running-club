@@ -1,4 +1,4 @@
-# Footlose Run Club
+# Footlose Runners
 Run Club Global is your gateway to an active, like-minded community of runners—whether you’re training for your first 5K or dreaming of a world-tour marathon. With a bold, full-screen hero image and three compelling reasons to lace up, our site immediately shows you why running with us matters. Explore five of the most iconic marathons around the globe through richly illustrated feature cards, then get in touch via our embedded map and contact details or join directly with a simple, validated sign-up form. Finally, soak up the club spirit in our photo gallery of past events. Built with Bootstrap and flexbox for seamless responsiveness, clear navigation, and accessible design, Run Club Global makes it effortless to find inspiration, connect with fellow runners, and take your next stride.
 
 [Contents](#contents)
@@ -112,12 +112,11 @@ Base the palette on energetic “sunrise” and “track” hues to evoke motion
 
 | CSS Name                 | HEX       | Comment                       |
 | ------------------------ | --------- | ----------------------------- |
-|     --primary-color      | #2E8B57 | Buttons, links, highlights    |
-|     --secondary-color    | #FF8C00 | Font color for the quiz       |
-|     --bg-light           | #F9F9F9 | Page background               |
-|     --text-dark          | #333333 | Body text                     |
-|     --accent-color       | #1E90FF | Hover states, card borders    |
-|     --muted-gray         | #666666 | Secondary text                |
+|     --primary-colour     | #F9F9F9 | Body text                     |
+|     --secondary-colour   | #ff7b3f | Buttons, links, highlights    |
+|     --bg-dark            | #151515 | Page background               |
+|     --accent-color       | #ff4828 | Hover states                  |
+|     --muted-gray         | #8F908E | Secondary text                |
 
 ## Imapges
 
