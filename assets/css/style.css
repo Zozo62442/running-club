@@ -102,6 +102,26 @@ h2 {
     font-weight: bold;
 }
 
+/* Carousel */
+/* .carousel .carousel-item {
+    height: 1000px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 1000px;
+  } */
+
+  header .carousel {
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
 /* Reasons to run */
 #reasons .card-title {
     background-color: transparent;
@@ -145,9 +165,36 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* Game library cards */
-#new-games .card,
-#fav-games .card {
+.background-image {
+    background-image: url('/assets/images/manyrunninglegs.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
+    z-index: 1;
+}
+
+#signup-form {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.4); /* slightly dark background for form box */
+    border-radius: 8px;
+}
+
+/* Incredible Marathon cards */
+#breathtaking-m .card,
+#quirky-m .card {
     border: none;
 }
 
@@ -195,6 +242,14 @@ h2 {
     /* Make all service cards the same height for consistency */
     #reasons .card-body {
         min-height: 191px;
+    }
+
+    #breathtaking-m .card-body {
+        column-gap: 2rem;
+    }
+
+    #quirky-m .card-body {
+        padding-bottom: 2rem;
     }
 }
 
