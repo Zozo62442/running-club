@@ -1,10 +1,11 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 
 /* CSS Variables */
 :root {
     --primary-font: "Hanken Grotesk", sans-serif;
     --secondary-font: "Noto Sans";
+    --third-font: "Barlow"; 
     --primary-colour: #F9F9F9; /* Body text */
     --secondary-colour: #ff7b3f; /* Buttons, links, highlights */
     --bg-dark: #151515; /* Page background */
@@ -15,32 +16,39 @@
 /* Global styles */
 
 body {
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     padding-top: 57.15px; /* pushes title down below nav bar */
     background-color: var(--bg-dark);
+    color:#F9F9F9;
 }
 
 h1,
 h2,
 h3 {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     color: var(--primary-colour);
 }
 
-h1, h2 { 
+h1, h2, h3 { 
     text-transform: uppercase;
 }
 
 h2 {
     margin-bottom: 2rem;
+    font-family: var(--third-font);
 }
 
-.sub-heading-color {
+.sub-heading {
     color: var(--primary-colour);
+    font-family: var(--third-font);
+    font-weight: lighter;
 }
 
 .section {
-    padding-top: 4rem; /* prevents navbar overlap */
+    padding-top: 1rem; /* prevents navbar overlap */
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 4rem;
 }
 
 /* Buttons */
@@ -70,6 +78,9 @@ h2 {
 /* Navbar */
 #navbar {
     background-color: var(--bg-dark);
+    text-transform: uppercase;
+    font-family: var(--third-font);
+    font-size: 1.3rem;
 }
 
 #navbar .logo {
@@ -81,34 +92,56 @@ h2 {
     font-family: var(--secondary-font)
 }
 
-/* Services */
-#services .card-footer {
-    font-weight: bold;
-    color: var(--accent-colour);
-    background-color: transparent;
+#header {
+    width: 100%;
+    height: auto;
 }
 
-/* Events */
-#events .table {
-    /* events table font size small enough that 
+/* About */
+#about h1 {
+    font-weight: bold;
+}
+
+/* Reasons to run */
+#reasons .card-title {
+    background-color: transparent;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+#reasons .card-body {
+    background-color: #151515;
+    border-color: white;
+    color: var(--primary-colour);
+    border-width: 1px;
+    border-radius: 0;
+    font-family: var(--secondary-font);
+}
+
+/* Join runs */
+#joinruns .table {
+    /* weekly run table font size small enough that 
       the table doesn't overflow on xs screens. 
       Size set back to 1rem in a media query 
       for sm screens and up */
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
-.student-discount {
+.limited-space {
     background-color: var(--secondary-colour);
     font-weight: bold;
+    font-family: var(--third-font);
     color: white;
     display: block;
     max-width: 300px;
     margin: auto;
     padding: 5px 10px;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 
-#services .card {
+#joinruns .card {
     margin-bottom: 1.5rem;
 }
 
@@ -151,7 +184,7 @@ h2 {
     color: var(--accent-colour)
 }
 
-#contact .table-dark * {
+.table-dark * {
     background-color: transparent;
 }
 
@@ -160,7 +193,7 @@ h2 {
 /* Media devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
     /* Make all service cards the same height for consistency */
-    #services .card-body {
+    #reasons .card-body {
         min-height: 191px;
     }
 }
@@ -168,7 +201,7 @@ h2 {
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
     /* Make all service cards the same height for consistency */
-    #services .card-body {
+    #reasons .card-body {
         min-height: auto;
     }
 }
@@ -176,7 +209,7 @@ h2 {
 /* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
     /* make all service cards the same height for consistency */
-    #services .card-body {
+    #reasons .card-body {
         min-height: 220px;
     }
 }
@@ -184,7 +217,7 @@ h2 {
 /* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
     /* make all service cards the same height for consistency */
-    #services .card-body {
+    #reasons .card-body {
         min-height: 195px;
     }
 }

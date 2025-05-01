@@ -60,12 +60,9 @@
 <header id="header" class="container section">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 text-center text-xl-start">
-            <h1 class="display-3">Boardwalk Games</h1>
+            <h1 class="display-3">Weekly runs</h1>
             <p class="my-4">
-                Thank you for choosing to reserve a spot at Boardwalk Games! Please
-                fill out the form below with your details and preferred event. A
-                member of our team will call you back as soon as possible to confirm
-                your booking and answer any questions you may have.
+                Once you have been approved for a date & time slot you will not have to sign-up again for this specific weekly run!
             </p>
         </div>
     </div>
@@ -76,7 +73,7 @@
     <section id="booking-form" class="container section">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
-                <h2>Booking inquiry</h2>
+                <h2>Reserve your spot!</h2>
                 <form action="success.html" method="GET">
                     <div class="row">
                         <div class="col-12 col-lg-6 mb-3">
@@ -91,49 +88,38 @@
                             <label for="phone" class="form-label">Phone number</label>
                             <input class="form-control" id="phone" name="phone" type="number" required>
                         </div>
-                        <div class="col-12 col-lg-6 mb-3">
-                            <label for="event-type" class="form-label">Event type</label>
-                            <select id="event-type" class="form-select" name="event-form" required>
-                                <option value="" selected>Select</option>
-                                <option value="regular-play">Reserve a table</option>
-                                <option value="dnd">Dungeons & Dragons</option>
-                                <option value="retro-night">Retro Game Night</option>
-                                <option value="tournament">Tournament</option>
-                                <option value="kids-party">Kids party</option>
-                            </select>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
+                        <div class="col-12 col-lg-4 mb-3">
+                            <label for="date" class="form-label">Date to join</label>
+                            <input id="date" type="date" class="form-control" name="date" required>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn custom-button-outline mb-4">Submit</button>
+                    <button type="submit" class="btn custom-button-outline my-4">Submit</button>
                 </form>
             </div>
         </div>
     </section>
 </main>
 
-    <!-- footer / contact section -->
+<!-- Footer / contact section -->
+    <!-- mt-auto added to push footer to the bottom of the page -->
     <footer id="contact" class="mt-auto">
-        <div class="container">
-            <div class="row justify-content-center">
+        <div class="container section">
+            <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="display-6 mt-4">Contact us!</h2>
                 </div>
                 <!-- Contact info -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <h3 class="sub-heading-color">Contact info</h3>
+                <div class="col-12 text-center">
                     <address>
-                        <strong><i class="fa-solid fa-location-dot"></i> Boardwalk Games</strong><br>
-                        123 Boardwalk<br>
-                        Boardwalk City, 12345
+                        <strong><i class="fa-solid fa-location-dot"></i>Footloose Runnters</strong><br>
+                        1 Treadmill<br>
+                        Berlin, 12345
                     </address>
                     <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
-                        <i class="fa-solid fa-paper-plane"></i> info@boardwalk-games.co</p>
+                        <i class="fa-solid fa-paper-plane"></i> run-forest@footlooserunners.de</p>
 
-                    <div class="social-links my-4">
+                    <div class="social-links col-12 text-center">
                          <a href="https://www.instagram.com" target="_blank"
                             aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
                                     class="fa-brands fa-instagram"></i></a>
@@ -143,39 +129,6 @@
                          <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)"
                                 rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
                      </div>
-                </div>
-                <!-- Opening times -->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <h3 class="sub-heading-color">Opening times</h3>
-                    <table class="table table-bordered table-dark">
-                        <thead>
-                            <tr>
-                                <th scope="col">Day</th>
-                                <th scope="col">Open</th>
-                                <th scope="col">Close</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                                <th scope="row">Mon</th>
-                                <td colspan="2">Closed</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Tue - Thur</th>
-                                <td>11am</td>
-                                <td>11pm</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Fri - Sat</th>
-                                <td>11am</td>
-                                <td>12am</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Sun</th>
-                                <td>12pm</td>
-                                <td>7pm</td>
-                            </tr>
-                        </tbody>
-                      </table>
                 </div>
             </div>
         </div>
