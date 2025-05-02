@@ -1,7 +1,7 @@
 # Footlose Runners
 Run Club Global is your gateway to an active, like-minded community of runners—whether you’re training for your first 5K or dreaming of a world-tour marathon. With a bold, full-screen hero image and three compelling reasons to lace up, our site immediately shows you why running with us matters. Explore five of the most iconic marathons around the globe through richly illustrated feature cards, then get in touch via our embedded map and contact details or join directly with a simple, validated sign-up form. Finally, soak up the club spirit in our photo gallery of past events. Built with Bootstrap and flexbox for seamless responsiveness, clear navigation, and accessible design, Run Club Global makes it effortless to find inspiration, connect with fellow runners, and take your next stride.
 
-![Animation-Quiz](docs/animation-quiz-responsive-display.png)
+![running-club](docs/animation-quiz-responsive-display.png)
 
 [Contents](#contents)
   * [User Goals](#user-goals)
