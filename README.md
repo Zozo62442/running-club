@@ -95,13 +95,19 @@ Run Club Global is your gateway to an active, like-minded community of runners�
 * Contact bottom
 * Address and map side-by-side
 
-[Mobile Wireframes](../running-club/docs/wireframe_mobile.png "Mobile Wireframes")
-[Mobile Wireframes](../running-club/docs/wireframe_mobile_2.png "Mobile Wireframes")
-[Desktop Wireframes](../running-club/docs/desktop_carousel.png "Desktop Wireframes carousel")
-[Desktop Wireframes](../running-club/docs/desktop_about.png_ "Desktop Wireframes about")
-[Desktop Wireframes](../running-club/docs/desktop_contact.png "Desktop Wireframes contact")
-[Desktop Wireframes](../running-club/docs/desktop_success.png "Desktop Wireframes success page")
-[Desktop Wireframes](../running-club/docs/desktop_reasons-to-run.png "Desktop Wireframes reasons to run section")
+[Mobile Wireframes](/docs/wireframe_mobile.png "Mobile Wireframes")
+
+[Mobile Wireframes](/docs/wireframe_mobile_2.png "Mobile Wireframes")
+
+[Desktop Wireframes Carousel](/docs/desktop_carousel.png "Desktop Wireframes carousel")
+
+[Desktop Wireframes About Section](/docs/desktop_about.png_ "Desktop Wireframes about")
+
+[Desktop Wireframes Contact Section](/docs/desktop_contact.png "Desktop Wireframes contact")
+
+[Desktop Wireframes Success page](/docs/desktop_success.png "Desktop Wireframes success page")
+
+[Desktop Wireframes Reasons-to-run section](/docs/desktop_reasons-to-run.png "Desktop Wireframes reasons to run section")
 
 ## Design Choices
 
@@ -112,7 +118,7 @@ Run Club Global is your gateway to an active, like-minded community of runners�
 ### Colour Scheme 
 Colour scheme was chosen based on the palette of energetic “sunrise” and “track” hues to evoke motion and community fitting running:
 
-![Contrast Grid](../running-club/docs/Colours%20Runners%20Club.png)
+![Contrast Grid](/docs/Colours%20Runners%20Club.png)
 | CSS Name                 | HEX       | Comment                       |
 | ------------------------ | --------- | ----------------------------- |
 |     --primary-colour     | #F9F9F9 | Body text                     |
