@@ -1,7 +1,7 @@
 # Footlose Runners
 Run Club Global is your gateway to an active, like-minded community of runners—whether you’re training for your first 5K or dreaming of a world-tour marathon. With a bold, full-screen hero image and three compelling reasons to lace up, our site immediately shows you why running with us matters. Explore five of the most iconic marathons around the globe through richly illustrated feature cards, then get in touch via our embedded map and contact details or join directly with a simple, validated sign-up form. Finally, soak up the club spirit in our photo gallery of past events. Built with Bootstrap and flexbox for seamless responsiveness, clear navigation, and accessible design, Run Club Global makes it effortless to find inspiration, connect with fellow runners, and take your next stride.
 
-![running-club](docs/animation-quiz-responsive-display.png)
+![running-club](docs/running-club_responsivedisplay)
 
 [Contents](#contents)
   * [User Goals](#user-goals)
@@ -91,17 +91,24 @@ Run Club Global is your gateway to an active, like-minded community of runners�
 [Back to top](#contents)
 
 ## Wireframes
-### Mobile-first sketches created in Figma:
+### Mobile-first sketches created in Balsamiq:
 * Hero + reasons stacked
 * Marathon cards in single column
-* Contact info → map → form
-* Gallery thumbnails scrollable
+* Contact info
 
 ### Tablet & Desktop:
-* Hero full-width with overlay text; reasons as three-column grid
+* Hero full-width carousel; reasons as three-column grid
 * Marathon cards in two- or three-column grid
-* Contact/map side-by-side
-* Gallery as responsive grid
+* Contact bottom
+* Address and map side-by-side
+
+[Mobile Wireframes](../running-club/docs/wireframe_mobile.png "Mobile Wireframes")
+[Mobile Wireframes](../running-club/docs/wireframe_mobile_2.png "Mobile Wireframes")
+[Desktop Wireframes](../running-club/docs/desktop_carousel.png "Desktop Wireframes carousel")
+[Desktop Wireframes](../running-club/docs/desktop_about.png_ "Desktop Wireframes about")
+[Desktop Wireframes](../running-club/docs/desktop_contact.png "Desktop Wireframes contact")
+[Desktop Wireframes](../running-club/docs/desktop_success.png "Desktop Wireframes success page")
+[Desktop Wireframes](../running-club/docs/desktop_reasons-to-run.png "Desktop Wireframes reasons to run section")
 
 ## Design Choices
 
@@ -112,6 +119,7 @@ Run Club Global is your gateway to an active, like-minded community of runners�
 ### Colour Scheme 
 Colour scheme was chosen based on the palette of energetic “sunrise” and “track” hues to evoke motion and community fitting running:
 
+![Contrast Grid](../running-club/docs/Colours%20Runners%20Club.png)
 | CSS Name                 | HEX       | Comment                       |
 | ------------------------ | --------- | ----------------------------- |
 |     --primary-colour     | #F9F9F9 | Body text                     |
