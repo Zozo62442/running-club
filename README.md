@@ -1,7 +1,7 @@
 # Footlose Runners
 Run Club Global is your gateway to an active, like-minded community of runners—whether you’re training for your first 5K or dreaming of a world-tour marathon. With a bold, full-screen hero image and three compelling reasons to lace up, our site immediately shows you why running with us matters. Explore five of the most iconic marathons around the globe through richly illustrated feature cards, then get in touch via our embedded map and contact details or join directly with a simple, validated sign-up form. Finally, soak up the club spirit in our photo gallery of past events. Built with Bootstrap and flexbox for seamless responsiveness, clear navigation, and accessible design, Run Club Global makes it effortless to find inspiration, connect with fellow runners, and take your next stride.
 
-![running-club](docs/running-club_responsivedisplay)
+![running-club](/docs/running-club_responsivedisplay.png)
 
 [Contents](#contents)
   * [User Goals](#user-goals)
@@ -12,16 +12,13 @@ Run Club Global is your gateway to an active, like-minded community of runners�
     + [Typography](#typography)
     + [Colour Scheme](#colour-scheme)
     + [Images](#images)
-    + [Responsiveness](#responsiveness)
 - [Features](#features)
   * [Existing Features](#existing-features)
     + [Header](#header)
-      - [Instructions](#instructions)
-      - [Feedback](#feedback)
-    + [Landing View](#landing-view)
-    + [Question View](#question-view)
-    + [Final Score View](#final-score-view)
-    + [Footer](#footer)
+    + [Home (Landing) View](#landing-view)
+    + [Marathons View](#marathon-view)
+    + [Sign-Up View](#sign-up-view)
+    + [Footer / Contact](#footer/contact)
   * [Future Enhancements](#future-enhancements)
 - [Technologies Used](#technologies-used)
   * [Languages](#languages)
@@ -33,16 +30,12 @@ Run Club Global is your gateway to an active, like-minded community of runners�
   * [Code Validation](#code-validation)
     + [HTML](#html)
     + [CSS](#css)
-    + [JavaScript](#javascript)
-  * [User Story Testing](#user-story-testing)
   * [Feature Testing](#feature-testing)
   * [Accessibility Testing](#accessibility-testing)
   * [Lighthouse Testing](#lighthouse-testing)
   * [Browser Testing](#browser-testing)
 - [Deployment](#deployment)
   * [To deploy the project](#to-deploy-the-project)
-  * [To fork the project](#to-fork-the-project)
-  * [To clone the project](#to-clone-the-project)
 - [Credits](#credits)
 
 
@@ -131,9 +124,6 @@ Colour scheme was chosen based on the palette of energetic “sunrise” and “
 ## Images
 Images and background images were sourced from getty images and from Unsplash. For background images I used an overlay to highlight the text in front of it. 
 
-### Responsiveness
-
-
 ## Features
 
 ### Existing Features
@@ -177,7 +167,6 @@ Images and background images were sourced from getty images and from Unsplash. F
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML5 "HTML")
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS "CSS")
-- [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JS")
 
 ## Libraries & Framework
 
