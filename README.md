@@ -1,6 +1,8 @@
 # Footlose Runners
 Run Club Global is your gateway to an active, like-minded community of runners—whether you’re training for your first 5K or dreaming of a world-tour marathon. With a bold, full-screen hero image and three compelling reasons to lace up, our site immediately shows you why running with us matters. Explore five of the most iconic marathons around the globe through richly illustrated feature cards, then get in touch via our embedded map and contact details or join directly with a simple, validated sign-up form. Finally, soak up the club spirit in our photo gallery of past events. Built with Bootstrap and flexbox for seamless responsiveness, clear navigation, and accessible design, Run Club Global makes it effortless to find inspiration, connect with fellow runners, and take your next stride.
 
+![Animation-Quiz](docs/animation-quiz-responsive-display.png)
+
 [Contents](#contents)
   * [User Goals](#user-goals)
   * [User Stories](#user-stories)
@@ -108,7 +110,7 @@ Run Club Global is your gateway to an active, like-minded community of runners�
 * Body: Open Sans, sans-serif — highly legible for paragraphs and lists
 
 ### Colour Scheme 
-Base the palette on energetic “sunrise” and “track” hues to evoke motion and community:
+Colour scheme was chosen based on the palette of energetic “sunrise” and “track” hues to evoke motion and community fitting running:
 
 | CSS Name                 | HEX       | Comment                       |
 | ------------------------ | --------- | ----------------------------- |
@@ -118,9 +120,11 @@ Base the palette on energetic “sunrise” and “track” hues to evoke motion
 |     --accent-color       | #ff4828 | Hover states                  |
 |     --muted-gray         | #8F908E | Secondary text                |
 
-## Imapges
+## Images
+Images and background images were sourced from getty images and from Unsplash. For background images I used an overlay to highlight the text in front of it. 
 
 ### Responsiveness
+
 
 ## Features
 
@@ -128,39 +132,28 @@ Base the palette on energetic “sunrise” and “track” hues to evoke motion
 
 #### Header & Navigation
 * Sticky Bootstrap navbar with anchor links to each major section.
-* Smooth scroll on click (CSS scroll-behavior: smooth;).
 * Collapsible mobile menu with clear “hamburger” icon.
 
 #### Home (Landing) View
-* Hero: Full-width background image + overlay heading, subheading.
-* 3 Reasons: Bootstrap cards/flex items with icons (e.g., 🏃, 🤝, 🌍), titles, 1–2-line blurbs.
-* Quick Contact: Email & phone snippet under hero.
+* Hero: Full-width carousel of images.
+* 3 Reasons: Bootstrap cards/flex items, titles, 1–2-line blurbs.
+* Quick information on running schedule and join button.
 
 #### Marathons View
-* Section title “Our Favorite Global Marathons.”
+* Section title “Incredible Global Marathons.”
 * Five Bootstrap cards laid out responsively, each with:
    * Race image (alt text)
-   * Name, location, date
-   * One-sentence highlight (e.g., “Run across Venice’s canals!”)
-
-#### Contact View
-* Club email (mailto:) and phone (tel:) links.
-* Physical meetup address.
-* Embedded Google Map iframe showing meetup spot.
+   * Name, location
+   * Short blurb below (e.g., “Run under the Brandenburger Tor!”)
 
 #### Sign-Up View
-* Form collecting: Name, Email, Preferred Training Day/Time dropdown.
+* Form collecting: Name, Email, Preferred Training Day selector.
 * HTML5 validation (required, type="email").
-* Submits to thank-you.html.
+* Submits to success.html.
 
-#### Gallery View
-* Responsive grid of at least 6 thumbnails.
-* Clicking opens full-size image in a new tab or lightbox.
-
-#### Footer
+#### Footer / Contact 
+* Club email, phone and address.
 * Social icons (Facebook, Instagram, Strava) linking to club profiles.
-* Newsletter signup form (email only) with inline validation.
-* © Year + club name.
 
 #### Future Enhancements
 * Events Calendar: visual calendar of upcoming runs.
@@ -169,3 +162,183 @@ Base the palette on energetic “sunrise” and “track” hues to evoke motion
 * Multi-language Support: English + local language toggles.
 * Blog Section: articles on training tips & race recaps.
 * Social Sharing: “Share this Marathon” buttons via Twitter/FB intents.
+
+# Technologies Used
+
+## Languages
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML5 "HTML")
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS "CSS")
+- [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JS")
+
+## Libraries & Framework
+
+- [Google Fonts](https://fonts.google.com/ "Google Fonts")
+- [Favicon](https://favicon.io/ "Favicon")
+
+
+## Tools
+
+* [GitHub](https://github.com/ "GitHub")
+* [Balsamiq](https://balsamiq.com/wireframes/ "Balsamiq")
+* [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
+* [TOC Generator](https://ecotrust-canada.github.io/markdown-toc/ "TOC Generator")
+* [Color Contrast Accessibility Validator](https://color.a11y.com/ "Color Contrast Accessibility Validator")
+
+[Back to top](#contents)
+
+# Testing
+
+## Bugs 
+
+The webpage was thoroughly tested. 3 bugs are still unresolved and require further investigation: 
+
+| Bug                              | Status     | Description                                                                                                                                                                                                                                                                                                                         | Steps To Resolve                                                                                                                                                                                                                             |
+| -------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Player Scores array not updating | Fixed      | New player scores not adding to the player score array. The same 5 scores displaying all the time.                                                                                                                                                                                                                                  | Wrong method used. Score was being added to the ed of Array which is fixed size. Updated JS code to add score to the beginning of Array and sort the scores accordingly.                                                                     |
+| Infinite Timer                   | Fixed      | While testing using console logs, transpired that timer keeps running after the game is finished and until Play Again is clicked.                                                                                                                                                                                                   | Moved startTimer function into get new question so when no questions are displayed the timer will not start.                                                                                                                                 |
+| Progress Dots Missing            | Fixed      | The aim for the functionality is to display correct answers in green, wrong - red, timed out - grey. While testing noticed that it does not add a dot for timed out answer.                                                                                                                                                         | Added a function to updateProgressDot ('empty') when the time is up.                                                                                                                                                                         |
+| Skip Question                    | Unresolved | There is a 2 second setTimeOut after question is answered and new question is displayed. However, if the question is answered with one second left on the timer, both timer functionality  and time out seem to run concurrently. This sometimes results in skipping a question in the quiz. The question is counted as unanswered. | This requires further testing of the JS and possibly redesign of startTimer function.                                                                                                                                                        |
+| Console Error - SEND button      | Unresolved | When feedback form button SEND is clicked, console error appears in console. Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')<br>    at HTMLDocument. It does not affect the functionality of the form as the acknowledgement page still displays.                                                   | There two forms being used in html file and button types are clashing. It needs additional JS event listeners to handle the SEND button. This was out of scope for this part of the project as the form is not being handled in the backend. |                                                                                    |
+
+[Back to top](#contents)
+
+## Responsiveness Tests
+
+To test the responsiveness, I have launched the website very early on. I followed the mobile-first strategy and verified all of my modifications using the DevTools browsers for Google Chrome and Microsoft Edge. Deployed versions were tested using the external website [Responsive Design Checker](https://responsivedesignchecker.com/ "Responsive Design Checker"). The [Am I Responsive](https://ui.dev/amiresponsive "Am I responsive") website was another external source that was used to obtain a unified view of different device breakpoints.
+
+I have also used Google Chrome's Mobile Simulator extension to evaluate the responsiveness of even more specialized devices. Device samples were examined for navigation, element alignment, content layout, and functionality concerns at different breakpoints. I moved the hamburger icon from the left to the right to enhance user experience as a result of the testing.
+
+Final Test Results:
+
+| Size | Device Example     | Navigation | Element Alignments | Content Placement | Functionality | Notes                                             |
+| ---- | ------------------ | ---------- | ------------------ | ----------------- | ------------- | ------------------------------------------------- |
+| sm   | Samsung Galaxy S20 | Good       | Good               | Good              | Good          | 
+| sm   | iPhone 11 PRO      | Good       | Good               | Good              | Good          | Updated font size of the start area
+| sm   | iPhone 13 PRO MAX  | Good       | Good               | Good              | Good          | Updated header bottom margin to fit quiz container 
+| md   | iPad MINI          | Good       | Good               | Good              | Good          |                                                   |
+| md   | Galaxy Tab S7      | Good       | Good               | Good              | Good          |                                                   |
+| md   | iPad Air           | Good       | Good               | Good              | Good          |                                                   |
+| lg   | iPad Pro           | Good       | Good               | Good              | Good          |                                                   |
+| xl   | Mackbook Air       | Good       | Good               | Good              | Good          |                             
+| xl   | HP Stream Laptop   | Good       | Good               | Good              | Good          |
+| xxl  | Dell Lattitude     | Good       | Good               | Good              | Good          | Updated font weight for support headings                                        |
+| xxl  | Desktop            | Good       | Good               | Good              | Good          |                                                   |
+
+[Back to top](#contents)
+
+
+## Code Validation
+
+### HTML
+
+I have used [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML"). I have tested 3 html files. They all came back without errors.
+
+* Main Quiz Page:
+
+![W3C HTML Validator](docs/html-validator-index.png "W3C HTML Validator index.html")
+
+* Feedback Acknowledgement:
+
+![W3C HTML Validator](docs/html-validator-feedback-thanks.png "W3C HTML Validator feedback-thanks.html")
+
+* 404 Page:
+
+![W3C HTML Validator](docs/404-validator-html.png "W3C HTML Validator 404.html")
+
+
+[Back to top](#contents)
+
+### CSS
+
+CSS code for the webpage was validated on [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator"). It has returned errors only relating to external cdnjs file which is used for font awesome icons. There were no errors relating CSS code for this website. 
+
+![W3C CSS Validator](docs/css-validator-results.png "W3C CSS Validator results")
+
+
+[Back to top](#contents)
+
+
+## Feature Testing
+
+This website was extensively tested for functionality using both Firefox developer tools.
+
+Every feature was manually tested.. 
+
+
+[Back to top](#contents)
+
+
+## Accessibility Testing
+
+I have used web accessibility evaluation tool [WAVE Tool](https://wave.webaim.org/) which helps to determine if web content is accessible to individuals with diverse needs. No issues were raised.
+
+![WAVE](docs/wave-report.png "WAVE Result")
+
+In addition to WAVE testing, I have tested my webpage for color contrast accessibility on [Color Contrast Accessibility Validator](https://color.a11y.com/).
+
+![Color Contrast Accessibility Validator](docs/a11y-result.png "Color Contrast Accessibility Validator Result")
+
+[Back to top](#contents)
+
+
+## Lighthouse Testing
+
+The Ultimate Animation Quiz has been tested in the [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) and [Microsoft Edge Dev Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/open/?tabs=cmd-Windows) using Lighthouse Testing tool which inspects and scores the website for the following criteria:
+
+* Performance - how quickly a website loads and how quickly users can access it.
+* Accessibility - test analyses how well people who use assistive technologies can use your website.
+* Best Practices - checks whether the page is built on the modern standards of web development.
+* SEO - checks if the website is optimised for search engine result rankings.
+
+Tests for Desktop on Lighthouse Chrome:
+![Lighthouse-Desktop-Chrome-Index](docs/lighthouse-desktop-chrome-index.png "Lighthouse-Desktop-Chrome-Index")
+
+Tests for Mobile on Lighthouse Chrome:
+![Lighthouse-Mobile-Chrome-Index](docs/lighthouse-mobile-chrome-index.png "Lighthouse-Mobile-Chrome-Index")
+
+Tests for Desktop Lighthouse Edge:
+![Lighthouse-Desktop-Edge-Index](docs/lighthouse-desktop-edge-index.png "Lighthouse-Desktop-Edge-Index")
+
+Tests for Mobile on Lighthouse Edge:
+![Lighthouse-Mobile-Edge-Index](docs/lighthouse-mobile-edge-index.png "Lighthouse-Mobile-Edge-Index")
+
+
+[Back to top](#contents)
+
+
+## Browser Testing
+
+The Animation Quiz website was examined for bugs and malfunctions using a variety of browsers. Opera, Firefox, Google Chrome, and Microsoft Edge were selected for thorough testing. Additionally, I have registered with [BrowserStack](https://live.browserstack.com/) in order to test my page on both Safari and Internet Explorer. Due to its age, Internet Explorer's initial results were quite subpar. On an iPad and an iPhone, I tested Safari. For the website's final version, no significant problems were discovered on the top 4 browsers. The test findings were verified. 
+
+[Browser Compatibility Manual Test](docs/browser-compatibility-test-results.pdf "Browser Compatibility Manual Test")
+
+
+[Back to top](#contents)
+
+# Deployment
+
+## To deploy the project
+
+The Running-club Wbsite was deployed on GitHub pages via the following steps:
+
+- Navigate to the repository on GitHub and click on **Settings**.
+
+- In the side navigation and select **Pages**.
+
+- In the **None** dropdown and choose **Main**.
+
+- Click on the **Save** button.
+
+- The website is now live at https://zozo62442.github.io/running-club/.
+
+_Any changes required to the website, they can be made, committed and pushed to GitHub._
+
+[Back to top](#contents)
+
+# Credits
+
+- Feedback, advice and support:
+
+  - [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin")
