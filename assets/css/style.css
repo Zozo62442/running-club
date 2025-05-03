@@ -201,7 +201,7 @@ header .carousel {
 
 /* Success page */
 .background-image {
-    background-image: url("assets/images/manyrunninglegs.jpg");
+    background-image: url("/assets/images/manyrunninglegs.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
