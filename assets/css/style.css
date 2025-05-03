@@ -174,25 +174,6 @@ header .carousel {
   margin-bottom: 1.5rem;
 }
 
-.background-image {
-  background-image: url("/assets/images/manyrunninglegs.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
-  z-index: 1;
-}
-
 #signup-form {
   position: relative;
   z-index: 2;
@@ -218,6 +199,26 @@ header .carousel {
   text-align: center;
 }
 
+/* Success page */
+.background-image {
+    background-image: url("/assets/images/manyrunninglegs.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
+    z-index: 1;
+  }
 
 /* Footer / contact */
 #contact {
