@@ -4,8 +4,8 @@
 /* CSS Variables */
 :root {
   --primary-font: "Hanken Grotesk", sans-serif;
-  --secondary-font: "Noto Sans";
-  --third-font: "Barlow";
+  --secondary-font: "Noto Sans", sans-serif;
+  --third-font: "Barlow", sans-serif;
   --primary-colour: #f9f9f9;
   --secondary-colour: #ff7b3f; 
   --bg-dark: #151515; 
@@ -209,7 +209,7 @@ header .carousel {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
 

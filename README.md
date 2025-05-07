@@ -1,7 +1,7 @@
 # Footlose Runners
 Run Club Global is your gateway to an active, like-minded community of runners—whether you’re training for your first 5K or dreaming of a world-tour marathon. With a bold, full-screen hero image and three compelling reasons to lace up, our site immediately shows you why running with us matters. Explore five of the most iconic marathons around the globe through richly illustrated feature cards, then get in touch via our embedded map and contact details or join directly with a simple, validated sign-up form. Finally, soak up the club spirit in our photo gallery of past events. Built with Bootstrap and flexbox for seamless responsiveness, clear navigation, and accessible design, Run Club Global makes it effortless to find inspiration, connect with fellow runners, and take your next stride.
 
-![running-club](/docs/running-club_responsivedisplay.png)
+![running-club](/docs/footloose-running-club.png)
 
 [Contents](#contents)
   * [User Goals](#user-goals)
@@ -186,9 +186,9 @@ Images and background images were sourced from getty images and from Unsplash. F
 
 ## Bugs 
 
-The webpage was thoroughly tested. 4 bugs are still unresolved and require further investigation: 
+The webpage was thoroughly tested. 2 bugs are still unresolved and require further investigation: 
 
-| Bug                              | Status     | Description                                                                                                                                                                                                                                                                                                                         | Steps To Resolve                                                                                                                                                                                                                             |
+| Bug | Status | Description   | Steps To Resolve |
 | -------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Images and logo not appearing | Fixed  | When opening the deployed page, the images and logo would now show.  | Used wrong linking method. Removed the "../" from the beginning of the path to the assets - image folder.                                                                     |
 | Styling of page would not load | Fixed | When opening the deployed page, all the styling was missing and left me with the default settings. | Similar problem as with the images, I had to change the file path link by removing "../" . |
@@ -201,23 +201,21 @@ The webpage was thoroughly tested. 4 bugs are still unresolved and require furth
 
 ## Responsiveness Tests
 
-I released the website quite early in order to test its responsiveness. I used the DevTools browsers Google Chrome to confirm all of my changes, according to the mobile-first approach. The external website [Responsive Design Checker](https://responsivedesignchecker.com/ "Responsive Design Checker") was used to test deployed versions. To get a consistent view of various device breakpoints, another external source was the [Am I Responsive](https://ui.dev/amiresponsive "Am I responsive") website.
+I launched the website early in order to test its responsiveness. I used the DevTools from Firefox to confirm all of my changes, according to the mobile-first approach.  To evaluate deployed versions, I used the external website [Responsive Design Checker](https://responsivedesignchecker.com/ "Responsive Design Checker"). To get a consistent view of various device breakpoints, another external source was the [Am I Responsive](https://ui.dev/amiresponsive "Am I responsive") website.
 
 Final Test Results:
 
 | Size | Device Example     | Navigation | Element Alignments | Content Placement | Functionality | Notes                                             |
 | ---- | ------------------ | ---------- | ------------------ | ----------------- | ------------- | ------------------------------------------------- |
 | sm   | Samsung Galaxy S20 | Good       | Good               | Good              | Good          | 
-| sm   | iPhone 11 PRO      | Good       | Good               | Good              | Good          | Updated font size of the start area
-| sm   | iPhone 13 PRO MAX  | Good       | Good               | Good              | Good          | Updated header bottom margin to fit quiz container 
+| sm   | iPhone 11 PRO      | Good       | Good               | Good              | Good          | 
+| sm   | iPhone 13 PRO MAX  | Good       | Good               | Good              | Good          |  
 | md   | iPad MINI          | Good       | Good               | Good              | Good          |                                                   |
-| md   | Galaxy Tab S7      | Good       | Good               | Good              | Good          |                                                   |
-| md   | iPad Air           | Good       | Good               | Good              | Good          |                                                   |
+| md   | iPad Retina        | Good       | Good               | Good              | Good          |                                                   |
 | lg   | iPad Pro           | Good       | Good               | Good              | Good          |                                                   |
-| xl   | Mackbook Air       | Good       | Good               | Good              | Good          |                             
-| xl   | HP Stream Laptop   | Good       | Good               | Good              | Good          |
-| xxl  | Dell Lattitude     | Good       | Good               | Good              | Good          | Updated font weight for support headings                                        |
-| xxl  | Desktop            | Good       | Good               | Good              | Good          |                                                   |
+| xl   | 10" Desktop        | Good       | Good               | Good              | Good          |                             
+| xl   | 15" Desktop        | Good       | Good               | Good              | Good          |
+| xxl  | 24" Desktop        | Good       | Good               | Good              | Good          |                                                   |
 
 [Back to top](#contents)
 
@@ -234,14 +232,14 @@ I have used [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML").
 
 * Sign-up Acknowledgement:
 
-![W3C HTML Validator](docs/html-validator-feedback-thanks.png "W3C HTML Validator feedback-thanks.html")
+![W3C HTML Validator](docs/html-validator-feedback-success.png "W3C HTML Validator feedback-thanks.html")
 
 
 [Back to top](#contents)
 
 ### CSS
 
-CSS code for the webpage was validated on [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator"). It has returned errors only relating to external cdnjs file which is used for font awesome icons. There were no errors relating CSS code for this website. 
+CSS code for the webpage was validated on [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator"). No errors returned.
 
 ![W3C CSS Validator](docs/css-validator-results.png "W3C CSS Validator results")
 
@@ -249,37 +247,23 @@ CSS code for the webpage was validated on [W3C CSS Validation Service](https://j
 [Back to top](#contents)
 
 
-## Feature Testing
-
-This website was extensively tested for functionality using Firefox developer tools.
-
-Every feature was manually tested.. 
-
-
-[Back to top](#contents)
-
-
 ## Accessibility Testing
 
-I have used web accessibility evaluation tool [WAVE Tool](https://wave.webaim.org/) which helps to determine if web content is accessible to individuals with diverse needs. No issues were raised.
+I used a web accessibility evaluation tool [WAVE Tool](https://wave.webaim.org/) which helps to assess if web content is accessible to individuals with diverse needs. The error was due to an empty table header, which was left empty on purpose and he alerts focused on in page links. 
 
 ![WAVE](docs/wave-report.png "WAVE Result")
-
-In addition to WAVE testing, I have tested my webpage for color contrast accessibility on [Color Contrast Accessibility Validator](https://color.a11y.com/).
-
-![Color Contrast Accessibility Validator](docs/a11y-result.png "Color Contrast Accessibility Validator Result")
 
 [Back to top](#contents)
 
 
 ## Lighthouse Testing
 
-The Ultimate Animation Quiz has been tested in the [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) and [Microsoft Edge Dev Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/open/?tabs=cmd-Windows) using Lighthouse Testing tool which inspects and scores the website for the following criteria:
+The Ultimate Animation Quiz has been tested in the [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) using Lighthouse Testing tool which inspects and scores the website for the following criteria:
 
-* Performance - how quickly a website loads and how quickly users can access it.
-* Accessibility - test analyses how well people who use assistive technologies can use your website.
-* Best Practices - checks whether the page is built on the modern standards of web development.
-* SEO - checks if the website is optimised for search engine result rankings.
+* Performance - refers to how rapidly a website loads and how quickly users can access it.
+* Accessibility - This test determines how well individuals with assistive technologies can use your website.
+* Best Practices - determines whether the page was designed in accordance with current web development standards.
+* SEO - determines whether the website is optimised for search engine results ranks.
 
 Tests for Desktop on Lighthouse Chrome:
 ![Lighthouse-Desktop-Chrome-Index](docs/lighthouse-desktop-chrome-index.png "Lighthouse-Desktop-Chrome-Index")
@@ -287,22 +271,14 @@ Tests for Desktop on Lighthouse Chrome:
 Tests for Mobile on Lighthouse Chrome:
 ![Lighthouse-Mobile-Chrome-Index](docs/lighthouse-mobile-chrome-index.png "Lighthouse-Mobile-Chrome-Index")
 
-Tests for Desktop Lighthouse Edge:
-![Lighthouse-Desktop-Edge-Index](docs/lighthouse-desktop-edge-index.png "Lighthouse-Desktop-Edge-Index")
-
-Tests for Mobile on Lighthouse Edge:
-![Lighthouse-Mobile-Edge-Index](docs/lighthouse-mobile-edge-index.png "Lighthouse-Mobile-Edge-Index")
-
+Both the low performance scores were due to the large carusel images at the top.
 
 [Back to top](#contents)
 
 
 ## Browser Testing
 
-The Footloose Running Club website was examined for bugs and malfunctions using a variety of browsers. Opera, Firefox, Google Chrome, and Microsoft Edge were selected for thorough testing. Additionally, I have registered with [BrowserStack](https://live.browserstack.com/) in order to test my page on both Safari and Internet Explorer. Due to its age, Internet Explorer's initial results were quite subpar. On an iPad and an iPhone, I tested Safari. For the website's final version, no significant problems were discovered on the top 4 browsers. The test findings were verified. 
-
-[Browser Compatibility Manual Test](docs/browser-compatibility-test-results.pdf "Browser Compatibility Manual Test")
-
+The Footloose Running Club website was tested for bugs and malfunctions using a range of browsers. Firefox, Google Chrome, and Safari were picked for extensive testing. I used an iPad and an iPhone to test Firefox. There were no serious issues detected with the website's final version on the top three browsers. The test results were validated. 
 
 [Back to top](#contents)
 
@@ -310,24 +286,24 @@ The Footloose Running Club website was examined for bugs and malfunctions using 
 
 ## To deploy the project
 
-The Running-club Wbsite was deployed on GitHub pages via the following steps:
+The Running-club website was deployed on GitHub pages using the steps below:
 
-- Navigate to the repository on GitHub and click on **Settings**.
+- Go to the repository on GitHub and click **Settings**.
 
-- In the side navigation and select **Pages**.
+- From the side navigation, pick **Pages**.
 
-- In the **None** dropdown and choose **Main**.
+- In the **None** dropdown, select **Main**.
 
-- Click on the **Save** button.
+- Click the **Save** button.
 
-- The website is now live at https://zozo62442.github.io/running-club/.
+- The website is now available at https://zozo62442.github.io/running-club/.
 
-_Any changes required to the website, they can be made, committed and pushed to GitHub._
+_Any changes needed to the website can be made, committed, and pushed to GitHub._
 
 [Back to top](#contents)
 
 # Credits
 
-- Feedback, advice and support:
+- Insightful feedback, advice and support:
 
   - [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin")
