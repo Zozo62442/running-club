@@ -106,8 +106,10 @@ Run Club Global is your gateway to an active, like-minded community of runners�
 * Headings: Montserrat, sans-serif — bold, modern, energetic
 * Body: Open Sans, sans-serif — highly legible for paragraphs and lists
 
+I chose the above fonts, as they are meant to be easy to read and also serious enough for a running-club. The text is sized using rem, to allow users to easily adjust them
+
 ### Colour Scheme 
-Colour scheme was chosen based on the palette of energetic “sunrise” and “track” hues to evoke motion and community fitting running:
+Colour scheme was chosen based on the palette of energetic “sunrise” and “track” hues to evoke motion and community fitting running. Additionally the stark contrast is supposed to help colour blind people contrast the different aspects of the page:
 
 [Contrast Grid](/docs/colours-runners-club.png)
 | CSS Name                 | HEX       | Comment                       |
@@ -186,7 +188,7 @@ Images and background images were sourced from getty images and from Unsplash. F
 
 ## Bugs 
 
-The webpage was thoroughly tested. 2 bugs are still unresolved and require further investigation: 
+The webpage was thoroughly tested. 3 bugs are still unresolved and require further investigation: 
 
 | Bug | Status | Description   | Steps To Resolve |
 | -------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
