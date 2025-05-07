@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
-
 <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
@@ -43,7 +41,7 @@
                         <a class="nav-link" href="#reasons">Reasons to Run</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="marathon-info.html">Incredible Marathons</a>
+                        <a class="nav-link" href="#marathons">Incredible Marathons</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -90,7 +88,6 @@
         </div>
     </header>
 
-    <!-- main element to hold all key sections of the home page. It is not part of the grid structure -->
     <main>
         <!--About section-->
         <section id="about" class="container section">
@@ -105,9 +102,7 @@
             </div>
         </section>
 
-        <div>
-            <img src="assets/images/break.png" alt="Section break using red line" class="break">
-        </div>
+<hr>
 
                 <!-- Reasons-to-run section -->
         <section id="reasons" class="container section">
@@ -119,14 +114,14 @@
                     <div class="card h-100">
                         <img src="assets/images/community.jpg" class="card-img-top"
                             alt="Four runners standing together, watching a sunset while having their arms around another." >
-                        <div class="card-body text-center">
+                        <div class="card-body text-center media-query">
                             <h3 class="card-title sub-heading">Part of a <br> Community</h3>
                             <p class="card-text">
-                                While some runners appreciate the calm and isolation that come with running alone, others view their running time as a chance to socialise. 
+                                While some runners appreciate the calm and isolation, others view their running time as a chance to socialise. 
                                 To cultivate a sense of community, it can be very helpful to find a running partner or join a group run. 
                                 Runners easily share a bond, supporting eachother not only during runs but connect on many levels of their lives. 
-                                Moreover, maintaining a consistent running partner or group can be an excellent source of motivation for running. 
-                                Some runners provide advice and motivation to fellow runners through online forums or social media. 
+                                <br> <br>Moreover, maintaining a consistent running partner or group can be an excellent source of motivation for running. 
+                                Some runners provide advice and motivation to fellow runners through online forums or social media. <br>
                                 You can connect with others who are equally passionate about running, find a venue for commemorating your victories, 
                                 and get assistance in overcoming any challenges you encounter during your training.
                             </p>
@@ -137,8 +132,7 @@
                     <div class="card h-100">
                         <img src="assets/images/woman-running.png" class="card-img-top"
                             alt="Woman running with a health watch">
-                        <div class="card-body text-center">
-                            <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
+                        <div class="card-body text-center media-query">
                             <h3 class="card-title sub-heading">Health</h3>
                             <p class="card-text">
                                 You may have guessed it, but it also improves physical and mental health. From decreasing stress levels, boosting self-esteem, 
@@ -151,7 +145,7 @@
                 <div class="col-12 col-md-4 mt-3">
                     <div class="card h-100">
                         <img src="assets/images/charity.jpg" class="card-img-top" alt="Charity handing out crates of supplies">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center media-query">
                             <h3 class="card-title sub-heading">Running for a <br> Specific Goal</h3>
                             <p class="card-text">
                                 If exercising is not your thing, with runnning you can train for a goal. May it be for a particular race, running for a charity, 
@@ -163,9 +157,106 @@
             </div>
         </section>
 
-        <div>
-            <img src="assets/images/break.png" alt="Section break using red line" class="break">
+<hr>
+
+<!-- Incredible Marathon Runs Secton-->
+        <section id="marathons" class="container section">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-6 text-center text-xl-start">
+                <h1 class="display-3">Incredible Marathons Around the World</h1>
+                    <div class="lead display-6 sub-heading-color">
+                        From <em>magical</em> to <em>chaotic</em>
+                    </div>
+                <p class="my-4">Running a marathon can be about more than just miles — it can be about magic, history, breathtaking views, and unforgettable experiences. 
+                    From whimsical routes through Disney parks to grueling climbs up ancient walls, these five incredible marathons each offer something unique for runners seeking challenge, fun, or inspiration. 
+                    Whether you’re chasing a personal best or soaking up the scenery, here are some races that are worth adding to your bucket list.</p>
+            </div>
         </div>
+    </section>
+
+<hr>
+
+    <main>
+         <!-- Breathtaking Marathons section -->
+         <section id="breathtaking-m" class="container section">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="display-6">Breathtaking Marathons</h2>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mt-3">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/images/honolulu-marathon.jpg" alt="Seaview marathon run in Honolulu">
+                        <div class="card-body media-query">
+                            <h3 class="card-title sub-heading-color">Honolulu Marathon – Hawaii, USA</h3>
+                            <p class="card-text">Starting before sunrise to beat the tropical heat, this scenic marathon hugs the coast of Oahu. From the 
+                                starting line at Ala Moana Beach Park to the finish at Kapiolani Park, runners pass through postcard-perfect spots like Waikiki Beach, Diamond Head, and Koko Head Crater. 
+                                With no time limit, it’s one of the most welcoming marathons for runners of all experience levels — whether you're racing or simply enjoying the view.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/images/greatwall-marathon.jpg" alt="People running up the Great Wall of China">
+                        <div class="card-body media-query">
+                            <h3 class="card-title sub-heading-color">Great Wall Marathon – China</h3>
+                            <p class="card-text">One of the world’s most physically demanding races, the Great Wall Marathon takes place on the historic Huangyaguan section of the Great Wall. 
+                                While you won’t run the entire 13,000-mile structure, the course still includes more than 5,000 rugged steps and sharp inclines. 
+                                Runners are rewarded with jaw-dropping views of surrounding mountains and the chance to tread one of humanity’s greatest engineering feats.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-3">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/images/berlin-marathon.jpg" alt="People running at Berlin marathonx">
+                        <div class="card-body media-query">
+                            <h3 class="card-title sub-heading-color">Berlin Marathon – Germany</h3>
+                            <p class="card-text">Our Home Race! No list would be complete without highlighting our own local gem! Famous for its fast, flat course, 
+                                Berlin has earned its place as one of the six World Marathon Majors. Known for electric energy and a historic route past landmarks like the Brandenburg Gate and the Reichstag, this is the place to push for a personal best. 
+                                In fact, the current men’s world record was set here in 2022. 
+                                Don’t leave without grabbing a photo at the East Side Gallery — it's Berlin in a nutshell.
+                                Mark your calendars — this one is worth training for!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quirky marathons section -->
+        <section id="quirky-m" class="container section">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="display-6">The querky ones</h2>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mt-3">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/images/disney-marathon.webp" alt="People running through the castle of Disney World">
+                        <div class="card-body media-query">
+                            <h3 class="card-title sub-heading-color">Walt Disney World Marathon – Florida, USA</h3>
+                            <p class="card-text">Magic meets mileage at this one-of-a-kind marathon through all four iconic Disney parks — Magic Kingdom, EPCOT, Hollywood Studios, and Animal Kingdom. 
+                                With thousands of runners in costume, DJs, live bands, and beloved characters cheering you on, the event feels more like a celebration than a competition. 
+                                Fireworks mark the start, and the enchanting finish makes this race a fairytale experience for runners of all ages.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 mt-3">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/images/vortexrun-marathon.jpg" alt="People running up and down the different floors of a building in Lausanne called the Vortex">
+                        <div class="card-body media-query">
+                            <h3 class="card-title sub-heading-color">The Vortex Race – Switzerland</h3>
+                            <p class="card-text">Held in Lausanne and organized by students from EPFL (École Polytechnique Fédérale de Lausanne), this relatively new race dares participants to conquer the intense Vortex ramp. 
+                                Open to all — students or not — the race combines adrenaline with purpose. 
+                                Each year, proceeds go to a charitable cause, and in 2024, the focus is on Loisirs pour Tous, a foundation promoting inclusive access to sports for people with disabilities.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </section>
+
+<hr>
 
     <!-- Join-runs section -->
     <section id="joinruns" class="container section">
@@ -175,7 +266,7 @@
             </div>
         
             <div class="col-12 col-xl-6 text-center">
-                <p>Have we convinced you yet? If not, check out our about section and our list of incredible marathons runs around the world!
+                <p>Have we inspired you yet? If not, check out our about section and our list of incredible marathons runs around the world!
                     And if we have -- then head right over to join our runs!</p>
                     <br>
                     <p class="limited-space text-center">Limited number of space! Make sure to book in advance!</p>
@@ -218,9 +309,7 @@
 
     </main>
 
-    <div>
-        <img src="assets/images/break.png" alt="Section break using red line" class="break">
-    </div>
+<hr>
 
     <!-- Footer / contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->

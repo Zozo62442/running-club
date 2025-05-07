@@ -90,24 +90,15 @@ Run Club Global is your gateway to an active, like-minded community of runners�
 * Contact info
 
 ### Tablet & Desktop:
-* Hero full-width carousel; reasons as three-column grid
+* Hero full-width carousel
+* Reasons as three-column grid
 * Marathon cards in two- or three-column grid
 * Contact bottom
-* Address and map side-by-side
+* Success page address and map side-by-side
 
-[Mobile Wireframes](/docs/wireframe_mobile.png "Mobile Wireframes")
+[Mobile Wireframes](/docs/wireframe-mobile.png "Mobile Wireframes")
 
-[Mobile Wireframes](/docs/wireframe_mobile_2.png "Mobile Wireframes")
-
-[Desktop Wireframes Carousel](/docs/desktop_carousel.png "Desktop Wireframes carousel")
-
-[Desktop Wireframes About Section](/docs/desktop_about.png_ "Desktop Wireframes about")
-
-[Desktop Wireframes Contact Section](/docs/desktop_contact.png "Desktop Wireframes contact")
-
-[Desktop Wireframes Success page](/docs/desktop_success.png "Desktop Wireframes success page")
-
-[Desktop Wireframes Reasons-to-run section](/docs/desktop_reasons-to-run.png "Desktop Wireframes reasons to run section")
+[Desktop Wireframes](/docs/wireframe-desktop.png "Mobile Wireframes")
 
 ## Design Choices
 
@@ -118,7 +109,7 @@ Run Club Global is your gateway to an active, like-minded community of runners�
 ### Colour Scheme 
 Colour scheme was chosen based on the palette of energetic “sunrise” and “track” hues to evoke motion and community fitting running:
 
-![Contrast Grid](/docs/Colours%20Runners%20Club.png)
+[Contrast Grid](/docs/colours-runners-club.png)
 | CSS Name                 | HEX       | Comment                       |
 | ------------------------ | --------- | ----------------------------- |
 |     --primary-colour     | #F9F9F9 | Body text                     |
@@ -195,23 +186,22 @@ Images and background images were sourced from getty images and from Unsplash. F
 
 ## Bugs 
 
-The webpage was thoroughly tested. 3 bugs are still unresolved and require further investigation: 
+The webpage was thoroughly tested. 4 bugs are still unresolved and require further investigation: 
 
 | Bug                              | Status     | Description                                                                                                                                                                                                                                                                                                                         | Steps To Resolve                                                                                                                                                                                                                             |
 | -------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Player Scores array not updating | Fixed      | New player scores not adding to the player score array. The same 5 scores displaying all the time.                                                                                                                                                                                                                                  | Wrong method used. Score was being added to the ed of Array which is fixed size. Updated JS code to add score to the beginning of Array and sort the scores accordingly.                                                                     |
-| Infinite Timer                   | Fixed      | While testing using console logs, transpired that timer keeps running after the game is finished and until Play Again is clicked.                                                                                                                                                                                                   | Moved startTimer function into get new question so when no questions are displayed the timer will not start.                                                                                                                                 |
-| Progress Dots Missing            | Fixed      | The aim for the functionality is to display correct answers in green, wrong - red, timed out - grey. While testing noticed that it does not add a dot for timed out answer.                                                                                                                                                         | Added a function to updateProgressDot ('empty') when the time is up.                                                                                                                                                                         |
-| Skip Question                    | Unresolved | There is a 2 second setTimeOut after question is answered and new question is displayed. However, if the question is answered with one second left on the timer, both timer functionality  and time out seem to run concurrently. This sometimes results in skipping a question in the quiz. The question is counted as unanswered. | This requires further testing of the JS and possibly redesign of startTimer function.                                                                                                                                                        |
-| Console Error - SEND button      | Unresolved | When feedback form button SEND is clicked, console error appears in console. Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')<br>    at HTMLDocument. It does not affect the functionality of the form as the acknowledgement page still displays.                                                   | There two forms being used in html file and button types are clashing. It needs additional JS event listeners to handle the SEND button. This was out of scope for this part of the project as the form is not being handled in the backend. |                                                                                    |
+| Images and logo not appearing | Fixed  | When opening the deployed page, the images and logo would now show.  | Used wrong linking method. Removed the "../" from the beginning of the path to the assets - image folder.                                                                     |
+| Styling of page would not load | Fixed | When opening the deployed page, all the styling was missing and left me with the default settings. | Similar problem as with the images, I had to change the file path link by removing "../" . |
+| Navigating to reasons section covers title | Unresolved | When clicking on Reasons button on the navbar, the redirections would cover the title. | This requires further troubleshooting.  |
+| Success page background image does not appear | Resolved | The image would not load when reaching the success page. | I set the image to a background image on a different z-axis to have it in the background and added a transparent-blackish overlay to have the text stand out. |
+| Location map and address on success page not centerd | Unresolved | When reaching the success page, the location map and address card is not centered. | This requires further troubleshooting. I have tried googling this issue and also trying to have the order: container, row and column, additionaly removing inline styling. Nothing has worked so far.|
+| Carousel-hero images are too large on the xl-screens | Unresolved | On the home page, the carousel with the hero images are larger in height, than the xl-screen, going below the viewport. | This requires further troubleshooting.|
 
 [Back to top](#contents)
 
 ## Responsiveness Tests
 
-To test the responsiveness, I have launched the website very early on. I followed the mobile-first strategy and verified all of my modifications using the DevTools browsers for Google Chrome and Microsoft Edge. Deployed versions were tested using the external website [Responsive Design Checker](https://responsivedesignchecker.com/ "Responsive Design Checker"). The [Am I Responsive](https://ui.dev/amiresponsive "Am I responsive") website was another external source that was used to obtain a unified view of different device breakpoints.
-
-I have also used Google Chrome's Mobile Simulator extension to evaluate the responsiveness of even more specialized devices. Device samples were examined for navigation, element alignment, content layout, and functionality concerns at different breakpoints. I moved the hamburger icon from the left to the right to enhance user experience as a result of the testing.
+I released the website quite early in order to test its responsiveness. I used the DevTools browsers Google Chrome to confirm all of my changes, according to the mobile-first approach. The external website [Responsive Design Checker](https://responsivedesignchecker.com/ "Responsive Design Checker") was used to test deployed versions. To get a consistent view of various device breakpoints, another external source was the [Am I Responsive](https://ui.dev/amiresponsive "Am I responsive") website.
 
 Final Test Results:
 
@@ -238,17 +228,13 @@ Final Test Results:
 
 I have used [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML"). I have tested 3 html files. They all came back without errors.
 
-* Main Quiz Page:
+* Main Footloose Running Club Page:
 
 ![W3C HTML Validator](docs/html-validator-index.png "W3C HTML Validator index.html")
 
-* Feedback Acknowledgement:
+* Sign-up Acknowledgement:
 
 ![W3C HTML Validator](docs/html-validator-feedback-thanks.png "W3C HTML Validator feedback-thanks.html")
-
-* 404 Page:
-
-![W3C HTML Validator](docs/404-validator-html.png "W3C HTML Validator 404.html")
 
 
 [Back to top](#contents)
@@ -265,7 +251,7 @@ CSS code for the webpage was validated on [W3C CSS Validation Service](https://j
 
 ## Feature Testing
 
-This website was extensively tested for functionality using both Firefox developer tools.
+This website was extensively tested for functionality using Firefox developer tools.
 
 Every feature was manually tested.. 
 
@@ -313,7 +299,7 @@ Tests for Mobile on Lighthouse Edge:
 
 ## Browser Testing
 
-The Animation Quiz website was examined for bugs and malfunctions using a variety of browsers. Opera, Firefox, Google Chrome, and Microsoft Edge were selected for thorough testing. Additionally, I have registered with [BrowserStack](https://live.browserstack.com/) in order to test my page on both Safari and Internet Explorer. Due to its age, Internet Explorer's initial results were quite subpar. On an iPad and an iPhone, I tested Safari. For the website's final version, no significant problems were discovered on the top 4 browsers. The test findings were verified. 
+The Footloose Running Club website was examined for bugs and malfunctions using a variety of browsers. Opera, Firefox, Google Chrome, and Microsoft Edge were selected for thorough testing. Additionally, I have registered with [BrowserStack](https://live.browserstack.com/) in order to test my page on both Safari and Internet Explorer. Due to its age, Internet Explorer's initial results were quite subpar. On an iPad and an iPhone, I tested Safari. For the website's final version, no significant problems were discovered on the top 4 browsers. The test findings were verified. 
 
 [Browser Compatibility Manual Test](docs/browser-compatibility-test-results.pdf "Browser Compatibility Manual Test")
 

@@ -1,23 +1,23 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,400..900;1,400..900&family=Noto+Sans:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet');
 
 /* CSS Variables */
 :root {
   --primary-font: "Hanken Grotesk", sans-serif;
   --secondary-font: "Noto Sans";
   --third-font: "Barlow";
-  --primary-colour: #f9f9f9; /* Body text */
-  --secondary-colour: #ff7b3f; /* Buttons, links, highlights */
-  --bg-dark: #151515; /* Page background */
-  --accent-colour: #ff4828; /* Hover states */
-  --muted-gray: #8f908e; /* Secondary text */
+  --primary-colour: #f9f9f9;
+  --secondary-colour: #ff7b3f; 
+  --bg-dark: #151515; 
+  --accent-colour: #ff4828; 
+  --muted-gray: #8f908e; 
 }
 
 /* Global styles */
 
 body {
   font-family: var(--secondary-font);
-  padding-top: 57.15px; /* pushes title down below nav bar */
+  padding-top: 57.15px;
   background-color: var(--bg-dark);
   color: #f9f9f9;
 }
@@ -31,8 +31,8 @@ h3 {
 }
 
 #header h1,
-#about h1, #success h1 {
-    font-weight: bold;
+#about h1, #success h1, #marathons h1 {
+    font-weight: 800;
 }
 
 h2 {
@@ -47,21 +47,25 @@ h2 {
 }
 
 .section {
-  padding-top: 1rem; /* prevents navbar overlap */
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 4rem;
+  padding: 1rem 0 0 4rem;
 }
 
-.break {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  max-width: 100px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
+hr {
+    display: block;
+    position: relative;
+    padding: 10 0;
+    margin: 20px auto 47px auto;
+    height: 0;
+    width: 10%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+ }
+
 
 /* Buttons */
 .custom-button-filled {
@@ -109,19 +113,6 @@ h2 {
   height: auto;
 }
 
-/* Carousel */
-/* .carousel .carousel-item {
-    height: 1000px;
-  }
-  
-  .carousel-item img {
-      position: absolute;
-      object-fit: cover;
-      top: 0;
-      left: 0;
-      min-height: 1000px;
-  } */
-
 header .carousel {
   object-fit: cover;
   object-position: center;
@@ -151,7 +142,8 @@ header .carousel {
 
 /* Join runs */
 #joinruns .table {
-  /* weekly run table font size small enough that 
+  /* TODO: 
+      weekly run table font size small enough that 
       the table doesn't overflow on xs screens. 
       Size set back to 1rem in a media query 
       for sm screens and up */
@@ -159,7 +151,8 @@ header .carousel {
 }
 
 .limited-space {
-  background-color: var(--secondary-colour);
+  background-color: transparent;
+  border: thin solid red;
   font-weight: bold;
   font-family: var(--third-font);
   color: white;
@@ -183,7 +176,7 @@ header .carousel {
     0,
     0,
     0.4
-  ); /* slightly dark background for form box */
+  ); 
   border-radius: 8px;
 }
 
@@ -201,7 +194,7 @@ header .carousel {
 
 /* Success page */
 .background-image {
-    background-image: url("assets/images/manyrunninglegs.jpg");
+    background-image: url("../images/manyrunninglegs.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
@@ -218,6 +211,10 @@ header .carousel {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
     z-index: 1;
+  }
+
+  #success .card {
+    max-width: 60%;
   }
 
 /* Footer / contact */
@@ -261,40 +258,28 @@ header .carousel {
 
 /* Media devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  /* Make all service cards the same height for consistency */
-  #reasons .card-body,
-  #breathtaking-m .card-body,
-  #quirky-m .card-body {
+  .media-query {
     min-height: 191px;
   }
 }
 
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
-  /* Make all service cards the same height for consistency */
-  #reasons .card-body,
-  #breathtaking-m .card-body,
-  #quirky-m .card-body {
+  .media-query {
     min-height: auto;
   }
 }
 
 /* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  /* make all service cards the same height for consistency */
-  #reasons .card-body,
-  #breathtaking-m .card-body,
-  #quirky-m .card-body {
+  .media-query {
     min-height: 220px;
   }
 }
 
 /* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
-  /* make all service cards the same height for consistency */
-  #reasons .card-body,
-  #breathtaking-m .card-body,
-  #quirky-m .card-body {
+  .media-query {
     min-height: 195px;
   }
 }
