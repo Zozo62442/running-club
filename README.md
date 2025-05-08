@@ -203,21 +203,19 @@ The webpage was thoroughly tested. 3 bugs are still unresolved and require furth
 
 ## Responsiveness Tests
 
-I launched the website early in order to test its responsiveness. I used the DevTools from Firefox to confirm all of my changes, according to the mobile-first approach.  To evaluate deployed versions, I used the external website [Responsive Design Checker](https://responsivedesignchecker.com/ "Responsive Design Checker"). To get a consistent view of various device breakpoints, another external source was the [Am I Responsive](https://ui.dev/amiresponsive "Am I responsive") website.
+I launched the running-club website as early as possible in order to test its responsiveness. I used the DevTools from Firefox to confirm all of my changes, with the mobile-first approach in mind.  To evaluate deployed versions, I used the external website [Responsive Design Checker](https://responsivedesignchecker.com/ "Responsive Design Checker"). To get a consistent view of various device breakpoints I used another external source:[Am I Responsive](https://ui.dev/amiresponsive "Am I responsive") website.
 
 Final Test Results:
 
-| Size | Device Example     | Navigation | Element Alignments | Content Placement | Functionality | Notes                                             |
-| ---- | ------------------ | ---------- | ------------------ | ----------------- | ------------- | ------------------------------------------------- |
-| sm   | Samsung Galaxy S20 | Good       | Good               | Good              | Good          | 
+| Size | Device Example     | Navigation | Element Alignments | Content Placement | Functionality | 
+| ---- | ------------------ | ---------- | ------------------ | ----------------- | ------------- | 
 | sm   | iPhone 11 PRO      | Good       | Good               | Good              | Good          | 
 | sm   | iPhone 13 PRO MAX  | Good       | Good               | Good              | Good          |  
-| md   | iPad MINI          | Good       | Good               | Good              | Good          |                                                   |
-| md   | iPad Retina        | Good       | Good               | Good              | Good          |                                                   |
-| lg   | iPad Pro           | Good       | Good               | Good              | Good          |                                                   |
-| xl   | 10" Desktop        | Good       | Good               | Good              | Good          |                             
-| xl   | 15" Desktop        | Good       | Good               | Good              | Good          |
-| xxl  | 24" Desktop        | Good       | Good               | Good              | Good          |                                                   |
+| md   | iPad MINI          | Good       | Good               | Good              | Good          | 
+| md   | iPad Retina        | Good       | Good               | Good              | Good          | 
+| lg   | iPad Pro           | Good       | Good               | Good              | Good          | 
+| xl   | 10" Desktop        | Good       | Good               | Good              | Good          |     
+| xxl  | 24" Desktop        | Good       | Good               | Good              | Good          | 
 
 [Back to top](#contents)
 
@@ -226,7 +224,7 @@ Final Test Results:
 
 ### HTML
 
-I have used [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML"). I have tested 3 html files. They all came back without errors.
+I validated and tested 3 html files [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML"), which came back without errors.
 
 * Main Footloose Running Club Page:
 
@@ -241,7 +239,7 @@ I have used [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML").
 
 ### CSS
 
-CSS code for the webpage was validated on [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator"). No errors returned.
+CSS code for the webpage was validated on [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator") for which no errors returned.
 
 ![W3C CSS Validator](docs/css-validator-results.png "W3C CSS Validator results")
 
@@ -251,7 +249,7 @@ CSS code for the webpage was validated on [W3C CSS Validation Service](https://j
 
 ## Accessibility Testing
 
-I used a web accessibility evaluation tool [WAVE Tool](https://wave.webaim.org/) which helps to assess if web content is accessible to individuals with diverse needs. The error was due to an empty table header, which was left empty on purpose and he alerts focused on in page links. 
+I used a web accessibility evaluation tool [WAVE Tool](https://wave.webaim.org/) which helps to assess if web content is accessible to individuals with diverse needs. The error was due to an empty table header, which was left empty on purpose and the alerts were due to the navigation bar linking to sections on the same page, which was also purposeful.
 
 ![WAVE](docs/wave-report.png "WAVE Result")
 
@@ -260,7 +258,7 @@ I used a web accessibility evaluation tool [WAVE Tool](https://wave.webaim.org/)
 
 ## Lighthouse Testing
 
-The Ultimate Animation Quiz has been tested in the [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) using Lighthouse Testing tool which inspects and scores the website for the following criteria:
+I tested the Footloose running club website with the Chrome extension [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) Lighthouse Testing tool which analyses and scores the website on the criteria below:
 
 * Performance - refers to how rapidly a website loads and how quickly users can access it.
 * Accessibility - This test determines how well individuals with assistive technologies can use your website.
@@ -273,14 +271,14 @@ Tests for Desktop on Lighthouse Chrome:
 Tests for Mobile on Lighthouse Chrome:
 ![Lighthouse-Mobile-Chrome-Index](docs/lighthouse-mobile-chrome-index.png "Lighthouse-Mobile-Chrome-Index")
 
-Both the low performance scores were due to the large carusel images at the top.
+Both the low performance scores were due to the large carousel images at the top.
 
 [Back to top](#contents)
 
 
 ## Browser Testing
 
-The Footloose Running Club website was tested for bugs and malfunctions using a range of browsers. Firefox, Google Chrome, and Safari were picked for extensive testing. I used an iPad and an iPhone to test Firefox. There were no serious issues detected with the website's final version on the top three browsers. The test results were validated. 
+The Footloose Running Club website was tested for malfunctions and bugs using a range of browsers, for which Firefox, Google Chrome, and Safari were picked. I used a MacBook, iPad and an iPhone to test Firefox. An iPad and iPhone to test Safari, and a Macbook to test it on Google Chrome. There were no serious issues detected with the website's final version on the top three browsers.
 
 [Back to top](#contents)
 
